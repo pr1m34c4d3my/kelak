@@ -2,7 +2,7 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
-import mainpic from "../public/mainpic.jpg";
+import mainpic from "../public/logokelak.png";
 import Link from "next/link";
 
 type Props = {};
@@ -21,11 +21,9 @@ export default function Hero({}: Props) {
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
-      <Image
-        className="relative rounded-full h-50 w-50 mx-auto object-cover"
-        src={mainpic}
-        alt="kelak"
-      />
+      <div className="relative bg-white w-500px h-500px rounded-full pl-3 mx-auto">
+        <Image className=" w-40" src={mainpic} alt="kelak" />
+      </div>
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Digital Creative Agency
@@ -43,7 +41,7 @@ export default function Hero({}: Props) {
             <button className="heroButton">Projects</button>
           </Link>
           <Link href="#tech">
-            <button className="heroButton">Tech Stack</button>
+            <button className="heroButton">Tech</button>
           </Link>
           <Link href="#gallery">
             <button className="heroButton">Gallery</button>
