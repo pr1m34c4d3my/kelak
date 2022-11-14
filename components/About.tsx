@@ -30,7 +30,7 @@ export default function About({}: Props) {
         className="pt-10"
       >
         <Image
-          className="-mb-20 md:mb-20 flex-shrink-0 rounded-full object-cover w-[300px] md:w-[500px] l xl:w-[1000px]"
+          className="-mb-20 md:mb-20 flex-shrink-0 xl:rounded-lg rounded-full object-cover w-[300px] md:w-[500px] l xl:w-[1000px]"
           src={aboutimg}
           alt=""
           objectFit="cover"
@@ -39,11 +39,11 @@ export default function About({}: Props) {
       {/* Content */}
       <div className="space-y-10 px-0 md:px-28">
         <h4 className="text-4xl font-semibold">
-          Here is a{" "}
+          Here is our{" "}
           <span className="underline decoration-[#F7AB0A]/50 animate-pulse">
             little
           </span>{" "}
-          background
+          story
         </h4>
         <p className="text-base">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
